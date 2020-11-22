@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtLogradouro"
+        android:layout_width="99dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/lblCpf"
+        app:layout_constraintStart_toEndOf="@+id/lblLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/intNumeroCasa"
+        android:layout_width="109dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/lblCpf"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogradouro" />
+
+    <TextView
+        android:id="@+id/txtBairro"
+        android:layout_width="164dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/lblCpf"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/lblLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/intNumeroCasa" />
+
+    <TextView
+        android:id="@+id/txtEstado"
+        android:layout_width="160dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/lblCpf"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toEndOf="@+id/lblLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/txtBairro" />
+
+    <TextView
+        android:id="@+id/intDDD"
+        android:layout_width="99dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/lblCpf"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lblDDD"
+        app:layout_constraintTop_toBottomOf="@+id/txtEstado" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblLogradouro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Logradouro:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/lblNumeroCasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="NumCasa:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogradouro" />
+
+    <TextView
+        android:id="@+id/lblBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Bairro:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNumeroCasa" />
+
+    <TextView
+        android:id="@+id/lblEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Estado:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBairro" />
+
+    <TextView
+        android:id="@+id/lblDDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="DDD:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEstado" />
+
+    <TextView
+        android:id="@+id/lblCpf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="CPF: "
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/lblCEP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="CEP:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/lblCpf" />
+
+    <TextView
+        android:id="@+id/lblCidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Cidade:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/lblCEP" />
+
+    <TextView
+        android:id="@+id/lblNumeroTelefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Telefone:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtLogradouro"
+        app:layout_constraintTop_toBottomOf="@+id/lblCidade" />
+
+    <TextView
+        android:id="@+id/lblTipoTelefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="4dp"
+        android:text="TipoTelefone:"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/intDDD"
+        app:layout_constraintTop_toBottomOf="@+id/lblNumeroTelefone" />
+
+    <TextView
+        android:id="@+id/txtCpf"
+        android:layout_width="180dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblCpf"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/intCEP"
+        android:layout_width="180dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblCpf"
+        app:layout_constraintTop_toBottomOf="@+id/txtCpf" />
+
+    <TextView
+        android:id="@+id/txtCidade"
+        android:layout_width="134dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblCpf"
+        app:layout_constraintTop_toBottomOf="@+id/intCEP" />
+
+    <TextView
+        android:id="@+id/txtNumeroTelefone"
+        android:layout_width="125dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblCpf"
+        app:layout_constraintTop_toBottomOf="@+id/txtCidade" />
+
+    <TextView
+        android:id="@+id/txtTipoTelefone"
+        android:layout_width="163dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/lblTipoTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroTelefone" />
+</androidx.constraintlayout.widget.ConstraintLayout>
